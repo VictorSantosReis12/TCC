@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart KiloWatch</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script defer src="../JS/home.js"></script>
+
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="../assets/logo-favicon.png">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Irish+Grover&family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Headers -->
+    <header id="header-celular">
+        <img src="" alt="Notificação">
+        <img class="logo" src="../assets/logo.png" alt="Logo">
+        <img src="" alt="Usuário">
+    </header>
+    <header id="header-computador">
+        <img class="logo" src="../assets/logo.png" alt="Logo">
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Sidebar Computador -->
+        <section id="sidebar-computador">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/home-amarelo.png" alt="Home">
+                <h4 class="texto-sidebar" id="texto-sidebar-home">Home</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/energia.png" alt="Eletrodoméstico">
+                <h4 class="texto-sidebar" id="texto-sidebar-eletrodomestico">Eletrodomésticos</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/agua.png" alt="Atividade">
+                <h4 class="texto-sidebar" id="texto-sidebar-atividade">Atividades</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/grafico.png" alt="Gráfico">
+                <h4 class="texto-sidebar" id="texto-sidebar-grafico">Gráficos</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/meta.png" alt="Meta">
+                <h4 class="texto-sidebar" id="texto-sidebar-meta">Metas</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/notificacao.png" alt="Notificação">
+                <h4 class="texto-sidebar" id="texto-sidebar-notificacao">Notificações</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/usuario.png" alt="Usuário">
+                <h4 class="texto-sidebar" id="texto-sidebar-usuario">Usuário</h4>
+            </div>
+            <hr class="linha-sidebar">
+            <div class="div-sidebar">
+                <img class="imagem-sidebar" src="../assets/configuracao.png" alt="Configuração">
+                <h4 class="texto-sidebar" id="texto-sidebar-configuracao">Configurações</h4>
+            </div>
+        </section>
+
+        <!-- Seção com Caixas -->
+        <section id="secao-home">
+
+            <!-- Caixa do Custo -->
+            <section id="secao-custo">
+                <div class="div-titulo">
+                    <div>
+                        <img class="imagem-titulo" src="" alt="Valor">
+                        <h5 class="titulo">Estimativa de Custos Mensais</h5>
+                    </div>
+                    <img class="seta-titulo" src="" alt="Seta">
+                </div>
+                <div id="div-conta">
+                    <p class="valor-conta">Energia: R$ 210,00</p>
+                    <hr id="linha-conta">
+                    <p class="valor-conta">Água: R$ 96,00</p>
+                </div>
+            </section>
+
+            <!-- Caixa das Metas -->
+            <section id="secao-meta">
+                <div class="div-titulo">
+                    <div>
+                        <img class="imagem-titulo" src="" alt="Meta">
+                        <h5 class="titulo">Metas de Consumo</h5>
+                    </div>
+                    <img class="seta-titulo" src="" alt="Seta">
+                </div>
+                <div id="div-meta">
+                    <div class="div-grafico-meta">
+                        <!-- Provisório, será feito com Chart.js -->
+                        <img src="" alt="Meta de Energia">
+                        <p class="texto-meta-energia">170 kWh / 300 kWh</p>
+                    </div>
+                    <hr id="linha-meta">
+                    <div class="div-grafico-meta">
+                        <!-- Provisório, será feito com Chart.js -->
+                        <img src="" alt="Meta de Água">
+                        <p class="texto-meta-agua">6.300 L / 12.000 L</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Caixa dos Gráficos -->
+            <section id="secao-grafico">
+                <div class="div-titulo">
+                    <div>
+                        <img class="imagem-titulo" src="" alt="Gráfico">
+                        <h5 class="titulo">Gráficos de Consumo</h5>
+                    </div>
+                    <img class="seta-titulo" src="" alt="Seta">
+                </div>
+                <div id="div-grafico">
+                    <div class="div-grafico-consumo">
+                        <!-- Provisório, será feito com Chart.js -->
+                        <img src="" alt="Gráfico de Energia">
+                        <p class="texto-grafico-energia">Energia (kWh)</p>
+                    </div>
+                    <div class="div-grafico-consumo">
+                        <!-- Provisório, será feito com Chart.js -->
+                        <img src="" alt="Gráfico de Água">
+                        <p class="texto-grafico-agua">Água (Litros)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Caixa da Lista de Eletrodomésticos -->
+            <section id="secao-eletrodomestico">
+                <div class="div-titulo">
+                    <div>
+                        <img class="imagem-titulo" src="" alt="Eletrodoméstico">
+                        <h5 class="titulo">Lista de Eletrodomésticos</h5>
+                    </div>
+                    <img class="seta-titulo" src="" alt="Seta">
+                </div>
+                <section id="secao-eletrodomestico">
+                    <div id="legenda-eletrodomestico">
+                        <p class="texto-legenda-eletrodoméstico">.</p>
+                        <p class="texto-legenda-eletrodoméstico">Marca</p>
+                        <p class="texto-legenda-eletrodoméstico">Modelo</p>
+                        <p class="texto-legenda-eletrodoméstico">Consumo</p>
+                    </div>
+                    <div class="item-eletrodomestico">
+                        <img class="imagem-eletrodomestico" src="" alt="Eletrodoméstico">
+                        <p id="texto-item-eletrodomestico">Philco</p>
+                        <p id="texto-item-eletrodomestico">BRO85AK</p>
+                        <p id="texto-item-eletrodomestico">24 kWh</p>
+                    </div>
+                    <div class="item-eletrodomestico">
+                        <img class="imagem-eletrodomestico" src="" alt="Eletrodoméstico">
+                        <p id="texto-item-eletrodomestico">Philco</p>
+                        <p id="texto-item-eletrodomestico">BRO85AK</p>
+                        <p id="texto-item-eletrodomestico">24 kWh</p>
+                    </div>
+                    <div class="item-eletrodomestico">
+                        <img class="imagem-eletrodomestico" src="" alt="Eletrodoméstico">
+                        <p id="texto-item-eletrodomestico">Philco</p>
+                        <p id="texto-item-eletrodomestico">BRO85AK</p>
+                        <p id="texto-item-eletrodomestico">24 kWh</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Caixa da Lista de Atividades -->
+            <section id="secao-atividade">
+                <div class="div-titulo">
+                    <div>
+                        <img class="imagem-titulo" src="" alt="Atividade">
+                        <h5 class="titulo">Lista de Água</h5>
+                    </div>
+                    <img class="seta-titulo" src="" alt="Seta">
+                </div>
+                <section id="secao-atividade">
+                    <div id="legenda-atividade">
+                        <p class="texto-legenda-atividade">.</p>
+                        <p class="texto-legenda-atividade">Atividade</p>
+                        <p class="texto-legenda-atividade">Consumo</p>
+                    </div>
+                    <div class="item-atividade">
+                        <img class="imagem-atividade" src="" alt="Atividade">
+                        <p id="texto-item-atividade">Chuveiro</p>
+                        <p id="texto-item-atividade">45 L</p>
+                    </div>
+                    <div class="item-atividade">
+                        <img class="imagem-atividade" src="" alt="Atividade">
+                        <p id="texto-item-atividade">Chuveiro</p>
+                        <p id="texto-item-atividade">45 L</p>
+                    </div>
+                    <div class="item-atividade">
+                        <img class="imagem-atividade" src="" alt="Atividade">
+                        <p id="texto-item-atividade">Chuveiro</p>
+                        <p id="texto-item-atividade">45 L</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer Celular -->
+    <footer>
+        <img src="" alt="Gráfico">
+        <img src="" alt="Meta">
+        <div id="div-home">
+            <div id="circulo">
+                <img src="" alt="Home">
+            </div>
+        </div>
+        <img src="" alt="Lista">
+        <img src="" alt="Configuração">
+    </footer>
+
+</body>
+</html>

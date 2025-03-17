@@ -1,0 +1,141 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: #001C38;
+    padding-top: 10.44vh;
+    height: 89.66vh;
+}
+
+/* Headers */
+#header-celular {
+    display: none;
+}
+
+#header-computador {
+    background-color: #04498E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10.44vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    width: 4.66vw;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Sidebar */
+#sidebar-computador {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 89.66vh;
+    width: 6.52vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    background: #04498E;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+#sidebar-computador:hover {
+    width: 27.84vw;
+}
+
+.div-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.imagem-sidebar {
+    width: 3.47vw;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+.linha-sidebar {
+    background-color: #FFFFFF;
+    width: 5.3vw;
+    height: 2px;
+    border-radius: 20px;
+    border: none;
+}
+
+#sidebar-computador:hover .linha-sidebar {
+    transition: width 0.5s ease-in-out;
+    width: 25vw;
+}
+
+.texto-sidebar {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+    font-size: clamp(0.2rem, calc(0.5rem + 1vw), 1.2rem);
+    font-family: "Krona One", sans-serif;
+    color: #FFFFFF;
+}
+
+#texto-sidebar-home {
+    color: #EFC244;
+}
+
+.div-sidebar:hover .texto-sidebar, .div-sidebar:hover .imagem-sidebar {
+    transition: color 0.4s, filter 0.4s;
+    color: #EFC244;
+    filter: invert(34%) sepia(78%) saturate(527%) hue-rotate(7deg) drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.8));
+}
+
+#sidebar-computador:hover .texto-sidebar {
+    opacity: 1;
+}
+
+/* Seção com Caixas */
+
+#secao-home {
+    padding-left: 7.52vw;
+    display: grid;
+    grid-template-columns: 36.98vw 40.8vw;
+    justify-content: space-around;
+}
+
+#secao-custo {
+    border: 1px solid red;
+}
+
+#secao-meta {
+    border: 1px solid greenyellow;
+}
+
+#secao-grafico {
+    border: 1px solid yellow;
+}
+
+#secao-eletrodomestico {
+    border: 1px solid orange;
+}
+
+#secao-atividade {
+    border: 1px solid pink;
+}
+
+/* Footer */
+
+footer {
+    display: none;
+}

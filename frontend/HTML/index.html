@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart KiloWatch</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script defer src="../JS/main.js"></script>
+
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="../assets/logo-favicon.png">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Irish+Grover&family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Abertura -->
+    <div id="div-abertura">
+        <img id="logo-abertura" src="../assets/logo.png" alt="Logo">
+    </div>
+
+    <!-- Cadastro -->
+    <section id="secao-cadastro">
+        <img id="logo" src="../assets/logo-titulo.png" alt="Logo">
+
+        <!-- Email -->
+        <section id="secao-botoes-email">
+            <section id="campo-computador-email">
+                <img id="seta-volta-celular-email" src="../assets/seta-branca.png" alt="Seta">
+                <div id="div-input">
+                    <h2 id="titulo-cadastrar">Cadastrar-se</h2>
+                    <input id="nome" type="text" placeholder="Nome Completo">
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <button id="botao-proximo">
+                    Próximo
+                    <img src="../assets/seta-amarela.png" alt="Seta" id="seta-proximo">
+                </button>
+            </section>
+            <button id="botao-cadastrar">Cadastrar-se</button>
+            <section id="secao-ou">
+                <hr class="linha-ou">
+                <p id="texto-ou">ou</p>
+                <hr class="linha-ou">
+            </section>
+            <button id="botao-entrar">Entrar</button>
+        </section>
+
+        <!-- Senha -->
+        <section id="secao-botoes-senha">
+            <img id="seta-volta-celular-senha" src="../assets/seta-branca.png" alt="Seta">
+            <section id="campo-computador-senha">
+                <div id="div-input">
+                    <div id="div-titulo-senha">
+                        <img id="seta-volta-senha" src="../assets/seta-branca.png" alt="Seta">
+                        <h2 id="titulo-cadastrar">Cadastrar-se</h2>
+                    </div>
+                    <div id="div-input-senha">
+                        <input id="senha" type="password" placeholder="Senha">
+                        <img id="olho-senha" src="../assets/olho.png" alt="Olho">
+                    </div>
+                    <div id="div-input-senha">
+                        <input id="senha-confirmar" type="password" placeholder="Confirmar Senha">
+                        <img id="olho-senha-confirmar" src="../assets/olho.png" alt="Olho">
+                    </div>
+                    <div id="div-checkbox">
+                        <input id="checkbox" type="checkbox">
+                        <label id="receber-notificacao" for="checkbox">Receber notificações</label>
+                    </div>
+                </div>
+                <button id="botao-confirmar-cadastrar">Cadastrar-se</button>
+            </section>
+        </section>
+
+        <!-- Login -->
+        <section id="secao-botoes-entrar">
+            <img id="seta-volta-celular-entrar" src="../assets/seta-branca.png" alt="Seta">
+            <section id="campo-computador-entrar">
+                <div id="div-input">
+                    <div id="div-titulo-entrar">
+                        <img id="seta-volta-entrar" src="../assets/seta-branca.png" alt="Seta">
+                        <h2 id="titulo-cadastrar">Entrar</h2>
+                    </div>
+                    <input id="email-entrar" type="email" placeholder="Email">
+                    <div id="div-input-senha">
+                        <input id="senha-entrar" type="password" placeholder="Senha">
+                        <img id="olho-senha-entrar" src="../assets/olho.png" alt="Olho">
+                    </div>
+                    <div id="div-redefinir">
+                        <p id="texto-redefinir-branco">Esqueceu sua senha?</p>
+                        <p id="texto-redefinir-azul">Redefinir Senha</p>
+                    </div>
+                </div>
+                <button id="botao-logar">Entrar</button>
+            </section>
+        </section>
+    </section>
+    
+</body>
+</html>

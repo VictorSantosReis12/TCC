@@ -1,0 +1,550 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: #001C38;
+    height: 100vh;
+}
+
+/* Abertura */
+#div-abertura {
+    background-color: #001C38;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo-abertura {
+    width: 15.48vw;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Seção do Cadastro */
+#secao-cadastro {
+    height: 100vh;
+    padding-right: 3.66vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Logo com Nome: Smart KiloWatch */
+#logo {
+    width: 49.86vw;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Seções */
+#secao-botoes-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80.85vh;
+    width: 38.54vw;
+}
+
+#secao-botoes-senha {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80.85vh;
+    width: 38.54vw;
+}
+
+#secao-botoes-entrar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80.85vh;
+    width: 38.54vw;
+}
+
+/* Campos */
+#campo-computador-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #FCFADB;
+    padding: 4.29vh 3.81vw 4.29vh 3.81vw;
+    height: 51.67vh;
+    width: 30.92vw;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#campo-computador-senha, #campo-computador-entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #FCFADB;
+    padding: 4.29vh 3.81vw 4.29vh 3.81vw;
+    height: 100%;
+    width: 30.92vw;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titulos dos Campos */
+#titulo-cadastrar {
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Krona One", sans-serif;
+    color: #FFFFFF;
+}
+
+/* Inputs */
+#div-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.34vh;
+}
+
+#nome, #email, #email-entrar {
+    border: none;
+    outline: none;
+    background-color: #056EA7;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    height: calc(0.5vh + 10px);
+    width: calc(20vw + 100px);
+    padding: 3.71vh 1.25vw 3.71vh 1.25vw;
+    color: #FFFFFF;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Inder", sans-serif;
+}
+
+#div-input-senha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #056EA7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: calc(0.5vh + 10px);
+    width: calc(20vw + 100px);
+    padding: 3.71vh 1.25vw 3.71vh 1.25vw;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#senha, #senha-confirmar, #senha-entrar {
+    border: none;
+    outline: none;
+    background-color: #056EA7;
+    height: calc(0.5vh + 10px);
+    width: 100%;
+    padding: 3.71vh 1.25vw 3.71vh 0vw;
+    color: #FFFFFF;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Inder", sans-serif;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    filter: opacity(70%);
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+#olho-senha, #olho-senha-confirmar, #olho-senha-entrar {
+    width: 2.6vw;
+    cursor: pointer;
+}
+
+#olho-senha:hover, #olho-senha-confirmar:hover, #olho-senha-entrar:hover {
+    filter: brightness(90%);
+}
+
+/* Redefinir */
+#div-redefinir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: calc(22.5vw + 100px);
+    gap: 0.5vw;
+    flex-wrap: wrap;
+}
+
+#texto-redefinir-branco {
+    color: #FFFFFF;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Inder", sans-serif;
+    white-space: nowrap;
+}
+
+#texto-redefinir-azul {
+    color: #44A9CE;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Inder", sans-serif;
+    border-bottom: 1px solid #44A9CE;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#texto-redefinir-azul:hover {
+    filter: brightness(120%);
+}
+
+/* Checkbox */
+#div-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(4vh + 10px);
+    width: calc(22.5vw + 100px);
+    gap: 1vw;
+}
+
+#checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: calc(4vh + 10px);
+    width: calc(4vh + 10px);
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#checkbox:checked {
+    background-color: white;
+    border-color: white;
+    position: relative;
+}
+
+#checkbox:checked::after {
+    content: "✔";
+    font-size: calc(2vh + 10px);
+    color: #001a33;
+    font-weight: bold;
+    position: absolute;
+    left: 1;
+    top: 1;
+}
+
+#receber-notificacao {
+    color: #FFFFFF;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Inder", sans-serif;
+}
+
+/* Botões */
+#botao-proximo, #botao-logar, #botao-confirmar-cadastrar {
+    border: none;
+    background-color: #056EA7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: calc(7vh + 10px);
+    width: calc(25vw + 100px);
+    color: #EFC244;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Krona One", sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+
+    /* Seta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+#seta-proximo {
+    width: 3vw;
+}
+
+#botao-proximo:hover, #botao-logar:hover, #botao-confirmar-cadastrar:hover {
+    filter: brightness(120%);
+}
+
+#botao-cadastrar {
+    border: none;
+    background-color: #056EA7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: calc(6vh + 10px);
+    width: calc(36vw + 100px);
+    color: #EFC244;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Krona One", sans-serif;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#botao-entrar {
+    border: 3px solid #ECBA30;
+    background-color: #001C38;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: calc(9vh + 10px);
+    width: calc(32vw + 100px);
+    cursor: pointer;
+    color: #EFC244;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Krona One", sans-serif;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#botao-cadastrar:hover, #botao-entrar:hover {
+    filter: brightness(120%);
+}
+
+/* Setas Volta */
+#div-titulo-senha, #div-titulo-entrar {
+    position: relative;
+    width: 33vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seta-volta-senha, #seta-volta-entrar {
+    width: 3vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#seta-volta-celular-email, #seta-volta-celular-senha, #seta-volta-celular-entrar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10.83vw;
+    padding-top: 7vw;
+    padding-left: 5vw;
+    cursor: pointer;
+}
+
+#seta-volta-senha:hover, #seta-volta-entrar:hover {
+    filter: brightness(90%);
+}
+
+#seta-volta-celular-email:hover, #seta-volta-celular-senha:hover, #seta-volta-celular-entrar:hover {
+    filter: brightness(90%);
+}
+
+/* Ou */
+#secao-ou {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 38.54vw;
+}
+
+.linha-ou {
+    display: inline-block;
+    background-color: #FCFADB;
+    width: 15.55vw;
+    height: 1px;
+    border: none;
+}
+
+#texto-ou {
+    color: #FFFFFF;
+    font-size: clamp(0.4rem, calc(0.8rem + 1.3vw), 1.5rem);
+    font-family: "Krona One", sans-serif;
+}
+
+/* Celular e Tablet em pé */
+@media (max-width: 449px), (max-width: 874px) and (orientation: portrait) {
+    /* Geral */
+    body {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Abertura */
+    #logo-abertura {
+        width: 40.27vw;
+    }
+
+    /* Seção do Cadastro */
+    #secao-cadastro {
+        height: 55.93vh;
+        padding-right: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Logo */
+    #logo {
+        width: 87.77vw;
+    }
+    
+    /* Seções */
+    #secao-botoes-email {
+        height: 25.46vh;
+        width: auto;
+    }
+    
+    #secao-botoes-senha, #secao-botoes-entrar {
+        height: 46.4vh;
+        width: 70.83vw;
+    }
+
+    /* Campos */
+    #campo-computador-email {
+        display: none;
+        border: 0;
+        padding: 0;
+        height: 46.4vh;
+        width: 70.83vw;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    #campo-computador-senha, #campo-computador-entrar {
+        border: 0;
+        padding: 0;
+        height: 46.4vh;
+        width: 70.83vw;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    /* Titulos dos Campos */
+    #titulo-cadastrar {
+        display: none;
+    }
+    
+    /* Botões */
+    #botao-cadastrar {
+        display: flex;
+        border-radius: 15px;
+    }
+
+    #botao-entrar {
+        height: calc(6vh + 10px);
+        width: calc(36vw + 100px);
+        border-radius: 15px;
+    }
+
+    #botao-proximo, #botao-logar, #botao-confirmar-cadastrar {
+        height: calc(5vh + 10px);
+        width: 100%;
+        gap: 1.5vw;
+    }
+
+    #seta-proximo {
+        width: clamp(1.4rem, calc(1.6rem + 2.3vw), 2.5rem);
+    }
+
+    /* Ou */
+    #secao-ou {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .linha-ou {
+        display: inline-block;
+        background-color: #FCFADB;
+        width: 24.61vw;
+        height: 1px;
+        border: none;
+    }
+
+    /* Setas Volta */
+    #div-titulo-senha, #div-titulo-entrar {
+        display: none;
+    }
+
+    #seta-volta-celular-email, #seta-volta-celular-senha, #seta-volta-celular-entrar {
+        display: flex;
+    }
+
+    /* Inputs */
+    #div-input {
+        width: 100%;
+        gap: 4.34vh;
+    }
+
+    #nome, #email, #email-entrar {
+        height: calc(0.3vh + 5px);
+        width: 90%;
+        padding: 3.71vh 3.25vw 3.71vh 3.25vw;
+    }
+    
+    #div-input-senha {
+        height: calc(0.3vh + 5px);
+        width: 90%;
+        padding: 3.71vh 3.25vw 3.71vh 3.25vw;
+    }
+    
+    #senha, #senha-confirmar, #senha-entrar {
+        height: calc(0.3vh + 5px);
+    }
+    
+    #olho-senha, #olho-senha-confirmar, #olho-senha-entrar {
+        width: 8.05vw;
+        cursor: pointer;
+    }
+    
+    #olho-senha:hover, #olho-senha-confirmar:hover, #olho-senha-entrar:hover {
+        filter: brightness(90%);
+    }
+
+    /* Redefinir */
+    #div-redefinir {
+        width: 100%;
+        gap: 1vw;
+    }
+    
+    #texto-redefinir-branco {
+        font-size: clamp(0.4rem, calc(0.6rem + 1.3vw), 1.5rem);
+    }
+    
+    #texto-redefinir-azul {
+        font-size: clamp(0.4rem, calc(0.6rem + 1.3vw), 1.5rem);
+    }
+
+    /* Checkbox */
+    #div-checkbox {
+        height: calc(4vh + 5px);
+        width: 100%;
+        gap: 3vw;
+    }
+
+    #checkbox {
+        height: calc(4vh + 5px);
+        width: calc(4vh + 5px);
+    }
+
+    #receber-notificacao {
+        font-size: clamp(0.5rem, calc(0.7rem + 1.3vw), 1.5rem);
+    }
+}
