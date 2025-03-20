@@ -44,7 +44,7 @@ body {
     height: 89.66vh;
     width: 6.52vw;
     padding-left: 1vw;
-    padding-top: 1vh;
+    /* padding-top: 1vh; */
     background: #04498E;
     transition: width 0.5s ease-in-out;
     overflow: hidden;
@@ -75,10 +75,10 @@ body {
     height: 2px;
     border-radius: 20px;
     border: none;
+    transition: width 0.5s ease-in-out;
 }
 
 #sidebar-computador:hover .linha-sidebar {
-    transition: width 0.5s ease-in-out;
     width: 25vw;
 }
 
