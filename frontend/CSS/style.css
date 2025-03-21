@@ -167,7 +167,7 @@ input[type="password"]::-ms-reveal {
     cursor: pointer;
 }
 
-#olho-senha:hover, #olho-senha-confirmar:hover, #olho-senha-entrar:hover {
+#olho-senha:hover, #olho-senha:focus, #olho-senha-confirmar:hover, #olho-senha-confirmar:focus, #olho-senha-entrar:hover, #olho-senha-entrar:focus {
     filter: brightness(90%);
 }
 
@@ -198,7 +198,7 @@ input[type="password"]::-ms-reveal {
     white-space: nowrap;
 }
 
-#texto-redefinir-azul:hover {
+#texto-redefinir-azul:hover, #texto-redefinir-azul:focus {
     filter: brightness(120%);
 }
 
@@ -275,7 +275,7 @@ input[type="password"]::-ms-reveal {
     width: 3vw;
 }
 
-#botao-proximo:hover, #botao-logar:hover, #botao-confirmar-cadastrar:hover {
+#botao-proximo:hover, #botao-proximo:focus, #botao-logar:hover, #botao-logar:focus, #botao-confirmar-cadastrar:hover, #botao-confirmar-cadastrar:focus {
     filter: brightness(120%);
 }
 
@@ -312,7 +312,7 @@ input[type="password"]::-ms-reveal {
     box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-#botao-cadastrar:hover, #botao-entrar:hover {
+#botao-cadastrar:hover, #botao-cadastrar:focus, #botao-entrar:hover, #botao-entrar:focus {
     filter: brightness(120%);
 }
 
@@ -345,11 +345,11 @@ input[type="password"]::-ms-reveal {
     cursor: pointer;
 }
 
-#seta-volta-senha:hover, #seta-volta-entrar:hover {
+#seta-volta-senha:hover, #seta-volta-senha:focus, #seta-volta-entrar:hover, #seta-volta-entrar:focus {
     filter: brightness(90%);
 }
 
-#seta-volta-celular-email:hover, #seta-volta-celular-senha:hover, #seta-volta-celular-entrar:hover {
+#seta-volta-celular-email:hover, #seta-volta-celular-email:focus, #seta-volta-celular-senha:hover, #seta-volta-celular-senha:focus, #seta-volta-celular-entrar:hover, #seta-volta-celular-entrar:focus {
     filter: brightness(90%);
 }
 
@@ -514,7 +514,7 @@ input[type="password"]::-ms-reveal {
         cursor: pointer;
     }
     
-    #olho-senha:hover, #olho-senha-confirmar:hover, #olho-senha-entrar:hover {
+    #olho-senha:hover, #olho-senha:focus, #olho-senha-confirmar:hover, #olho-senha-confirmar:focus, #olho-senha-entrar:hover, #olho-senha-entrar:focus {
         filter: brightness(90%);
     }
 
